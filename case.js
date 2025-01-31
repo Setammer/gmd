@@ -267,7 +267,7 @@ ptz.sendMessage(id, {
             caption: "\n" + teks,
 }, { quoted:fsaluran,ephemeralExpiration: 86400});
 }
-const resver = `╒─━─• *\`⟨  ＵＳＥＲ － ＩＮＦＯ  ⟩\`* 
+const resver = `*\`⟨  ＵＳＥＲ － ＩＮＦＯ  ⟩\`* 
 │  
 │ㅤ✦ㅤ ᴘʀᴇᴍɪᴜᴍ: ${isPremium ? 'Yes':'No'}
 │ㅤ✧ㅤ ʜɪᴛ ᴄᴍᴅ: ${userdb.hitcmd}
@@ -278,7 +278,7 @@ const resver = `╒─━─• *\`⟨  ＵＳＥＲ － ＩＮＦＯ  ⟩\`*
 │ㅤ✧ㅤ ᴠᴇʀꜱɪᴏɴ: 1.2
 │ㅤ✦ㅤ ᴡʜɪꜱᴋᴇʏꜱᴏᴄᴋᴇᴛꜱ: custom: 6.6.0
 │
-╙─━─• *\`⟨  ＢＯＴ － ＣＬＩＥＮＴ  ⟩\`*`
+╙─━─• *\`⟨  RECBART - BOT  ⟩\`*`
 async function tiktok2(query) {
   return new Promise(async (resolve, reject) => {
     try {
@@ -905,7 +905,7 @@ switch(command) {
 case "menu": 
 const xtexg = `${resver}
 ${readmore}
-ʜᴀʟᴏ *${ucapanWaktu}* , ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡᴀ ꜱᴀʏᴀ ᴅᴀᴘᴀᴛ ᴍᴇʟᴀᴋᴜᴋᴀɴ ꜱᴇꜱᴜᴀᴛᴜ ʏᴀɴɢ ᴅɪ ꜱᴇᴅɪᴀᴋᴀɴ ᴅᴇᴠ, ᴅᴇɴɢᴀɴ ʜᴀɴʏᴀ ᴍᴇɴɢᴇᴛɪᴋ.
+ʜᴀʟᴏ *${ucapanWaktu}* , ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡᴀ, ꜱᴀʏᴀ ᴅᴀᴘᴀᴛ ᴍᴇʟᴀᴋᴜᴋᴀɴ ꜱᴇꜱᴜᴀᴛᴜ ʏᴀɴɢ ᴅɪ ꜱᴇᴅɪᴀᴋᴀɴ ᴅᴇᴠ, ᴅᴇɴɢᴀɴ ʜᴀɴʏᴀ ᴍᴇɴɢᴇᴛɪᴋ.
 
 ┌  ◦ ʟɪꜱᴛᴍᴇɴᴜ
 ╰  ◦ ᴀʟʟᴍᴇɴᴜ`
@@ -2814,7 +2814,7 @@ m.chat,
 }
 break;
 case 'sound1':
-case 'sound2':
+/*case 'sound2':
 case 'sound3':
 case 'sound4':
 case 'sound5':
@@ -2973,7 +2973,7 @@ case 'sound157':
 case 'sound158':
 case 'sound159':
 case 'sound160':
-case 'sound161':
+case 'sound161':*/
 var resttt = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
  ptz.sendMessage(m.chat, { audio: resttt, mimetype: 'audio/mp4', ptt: true, 
 })
@@ -3073,10 +3073,10 @@ await jadibot(ptz, m.sender.replace("@s.whatsapp.net", ""), m, m.sender)
 console.log(`Belum Ada User Yang Jadibot`)
 }
 break
-case "jadibot":
+/*case "jadibot":
  if (!isPremium) return reply(mess.check.premium)
 ptz.sendPoll(m, "*`[ Pilih Methode ]`*", [`jadibot-scan`,`jadibot-pairing ${m.sender.replace("@s.whatsapp.net", "")}`])      
-break
+*/break
   case "jadibot-scan":
     if (!isPremium) return reply(mess.check.premium)
         userdb.jadibot = true
