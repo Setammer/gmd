@@ -1,12 +1,12 @@
 {
-  "name": "gumdramon-war",
+  "name": "Recbart Bot",
   "version": "1.2.0",
   "description": "Simpel Bot Using Library Baileys",
   "main": "./lib/system/index.js",
   "scripts": {
     "start": "node ./lib/system/index.js"
   },
-  "author": "ЯDG Kiyoo",
+  "author": "Anscmlfdhy",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "github:pixiel-kiyo/Baileys",
